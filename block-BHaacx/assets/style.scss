@@ -1,0 +1,259 @@
+@import "general";
+@import "reset";
+@import "vars";
+
+// General Styling
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+// Container-one
+.item-one {
+    height: 80vh;
+}
+.container-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hero-image {
+    background: url(./media/home-img.jpg);
+    background-size: cover;
+    padding: 2rem;
+}
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0.8px 0 white;
+    color: #383838;
+    margin-left: 5rem;
+}
+
+.nav-article {
+    padding: 2rem;
+    background-color: $primary;
+}
+.hero-nav li a {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #797775;
+}
+.hero-nav li .active {
+    color: #ECAF4E;
+}
+
+.hero-article {
+    padding: 5rem 0;
+}
+
+.heading-bold {
+    font-weight: 600;
+}
+
+.paragraph-general {
+    font-size: 0.8rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+// Container-two
+.item-two {
+    height: 35vh;
+    padding: 2rem;
+}
+.container-two {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.item-two-img {
+    background-image: url(./media/about-img.jpg);
+    background-size: cover;
+}
+
+.logo-img {
+    width: 2rem;
+    padding-bottom: 2rem;
+}
+.my-skills {
+    background-color: $secondary;
+}
+label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+// Container-3 {
+.item-three {
+    height: 35vh;
+    padding: 2rem;
+    color: white;
+}
+.container-three {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item-three-primary {
+    background-color: $secondary;
+    color: white;
+}
+.item-three-sec {
+    background-color: $tertiary;
+}
+
+.item-three-ter {
+    background-color: rgb(126, 116, 116);
+}
+
+.item-three-quate {
+    color: black;
+}
+
+// Container-Four
+.item-four {
+    height: 40vh;
+    padding: 2rem;
+    color: white;
+}
+.container-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.item-four-experience {
+    background-color: $tertiary;
+}
+
+.experience-image {
+    background-image: url(./media/experience-img.jpg);
+    background-size: cover;
+}
+.experience-img {
+    width: 100%;
+    height: 100%;
+}
+
+.education-image {
+    background-image: url(./media/education-img.jpg);
+    background-size: cover;
+}
+
+.item-four-education {
+    background-color: $secondary;
+}
+.heading-ex-ed {
+    @extend .heading;
+    color: white;
+
+}
+.small-heading-ex-ed {
+    @extend .small-heading;
+    padding-bottom: 3rem;
+    color: white;
+}
+.flex-experience img  {
+    margin-right: 2rem;
+}
+
+.flex-experience h4 span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    margin-left: 1rem;
+}
+
+.flex-experience {
+    display: flex;
+}
+
+// Container-five
+.container-five {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item-five {
+    height: 60vh;
+}
+
+.item-five-visit-office {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item-five-visit-office-items-contact {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+.item-five-form {
+    background-color: $tertiary;
+    color: white;
+    padding: 0 2rem;
+}
+input,textarea {
+    width: 100%;
+    border: none;
+    background-color: $tertiary;
+    border-bottom: 1px solid $secondary;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+::placeholder {
+    color: white;
+}
+.paragraph-general-con {
+    @extend .paragraph-general;
+    line-height: 1;
+    font-weight: 600;
+}
+.paragraph-general-con-active {
+    color: $secondary;
+}
+
+// Container-six
+
+.container-six {
+    background-color: $tertiary;
+    text-align: center;
+    padding: 2rem;
+}
+
+// Container-Seven
+
+.container-seven {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.footer img {
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
